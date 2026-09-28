@@ -9,7 +9,7 @@
     <meta name="description" content="Official digital business card for Peter Bjørn Heinze. Chief Adviser and Lieutenant Colonel.">
     <link rel="canonical" href="https://heinze.co" />
     
-    <!-- Standard, Bulletproof Favicon linking directly to your uploaded PNG image -->
+    <!-- Standard, Bulletproof Favicon linking directly to your uploaded 'H' PNG image -->
     <link rel="icon" type="image/png" href="favicon.png">
     
     <!-- ADVANCED GOOGLE KNOWLEDGE PANEL OPTIMIZATION (Schema.org JSON-LD) -->
@@ -55,15 +55,10 @@
       "url": "https://heinze.co",
       "image": "https://heinze.co",
       "sameAs": [
-        "https://linkedin.com"
+        "https://linkedin.com/in/heinze"
       ]
     }
     </script>
-
-    <!-- Fetching the optimal font (Inter) from Google Fonts -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
 
     <style>
         /* Reset and background settings */
@@ -76,7 +71,8 @@
         body {
             /* Custom slate/douche blue color background */
             background-color: #4A607A; 
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            /* Typography fully updated to Calibri with professional fallback */
+            font-family: 'Calibri', 'Segoe UI', -apple-system, sans-serif;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -104,8 +100,8 @@
 
         /* Name styling - Forced to ALL CAPS (Versaler) */
         h1 {
-            font-size: 1.6rem; 
-            font-weight: 500;
+            font-size: 1.7rem; /* Marginally adjusted for Calibri's visual proportions */
+            font-weight: 700;  /* Bold weight for Calibri to maintain strong authority */
             text-transform: uppercase;
             letter-spacing: 0.05em; /* Added slight spacing between capital letters for aesthetics */
             margin-bottom: 30px;
@@ -128,8 +124,8 @@
             color: #FFFFFF;
             text-decoration: none;
             border-radius: 4px;
-            font-size: 0.95rem;
-            font-weight: 300;
+            font-size: 1.05rem; /* Marginally scaled to optimize Calibri text readability */
+            font-weight: 400;   /* Clean and legible regular weight */
             transition: all 0.3s ease;
             letter-spacing: 0.03em;
             white-space: nowrap; /* Ensures the long URL doesn't break into two lines */
@@ -148,15 +144,15 @@
 <body>
 
     <div class="card">
-        <!-- Profile Picture -->
+        <!-- Profile Picture (Must be placed in the same root folder as profil.jpg) -->
         <img src="profil.jpg" alt="PETER BJØRN HEINZE" class="profile-img">
         
-        <!-- Name -->
+        <!-- Name (Automatically forced to uppercase via CSS) -->
         <h1>Peter Bjørn Heinze</h1>
         
         <!-- Action items -->
         <div class="links">
-            <!-- ENDELIGT LINK: Begge steder i koden er nu rettet præcis til linkedin.com/in/heinze -->
+            <!-- LINJE 125: -->
             <a href="https://linkedin.com/in/heinze" class="btn-linkedin" target="_blank">linkedin.com/in/heinze</a>
         </div>
     </div>
