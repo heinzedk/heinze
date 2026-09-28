@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Behind-the-scenes SEO metadata for Google -->
+    <title>Peter Bjørn Heinze</title>
+    <meta name="description" content="Official digital business card for Peter Bjørn Heinze. Chief Adviser and Lieutenant Colonel.">
+    <link rel="canonical" href="https://heinze.co" />
+    
+    <!-- ADVANCED GOOGLE KNOWLEDGE PANEL OPTIMIZATION (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://heinze.co",
+      "name": "Peter Bjørn Heinze",
+      "jobTitle": [
+        "Chief Adviser",
+        "Lieutenant Colonel"
+      ],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Ministry of Foreign Affairs of Denmark",
+          "sameAs": "https://wikidata.org"
+        },
+        {
+          "@type": "Organization",
+          "name": "Danish Defence",
+          "sameAs": "https://wikidata.org"
+        }
+      ],
+      "knowsLanguage": [
+        {
+          "@type": "Language",
+          "name": "Danish",
+          "alternateName": "da"
+        },
+        {
+          "@type": "Language",
+          "name": "English",
+          "alternateName": "en"
+        },
+        {
+          "@type": "Language",
+          "name": "French",
+          "alternateName": "fr"
+        }
+      ],
+      "url": "https://heinze.co",
+      "image": "https://heinze.co",
+      "sameAs": [
+        "https://linkedin.com/in/heinze"
+      ]
+    }
+    </script>
+
+    <!-- Fetching the optimal font (Inter) from Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset and background settings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            /* Custom slate/douche blue color background */
+            background-color: #4A607A; 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Content container */
+        .card {
+            text-align: center;
+            max-width: 450px;
+            padding: 20px;
+        }
+
+        /* Profile image styling - Square with elegant rounded corners */
+        .profile-img {
+            width: 190px;
+            height: 190px;
+            border-radius: 12px; /* Smooth, elegant rounded corners instead of a full circle */
+            object-fit: cover;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Discreet shadow under the photo */
+        }
+
+        /* Name styling - Forced to ALL CAPS (Versaler) */
+        h1 {
+            font-size: 1.6rem; 
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em; /* Added slight spacing between capital letters for aesthetics */
+            margin-bottom: 30px;
+        }
+
+        /* Link container */
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Professional LinkedIn Button with branding integration */
+        .btn-linkedin {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-weight: 300;
+            transition: all 0.3s ease;
+            letter-spacing: 0.03em;
+            white-space: nowrap; /* Ensures the long URL doesn't break into two lines */
+        }
+
+        /* Smooth shift to LinkedIn's official professional corporate blue on hover */
+        .btn-linkedin:hover {
+            background-color: #0077B5;
+            border-color: #0077B5;
+            color: #FFFFFF;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Profile Picture (Must be placed in the same root folder as profil.jpg) -->
+        <img src="profil.jpg" alt="PETER BJØRN HEINZE" class="profile-img">
+        
+        <!-- Name (Automatically forced to uppercase via CSS) -->
+        <h1>Peter Bjørn Heinze</h1>
+        
+        <!-- Action items -->
+        <div class="links">
+            <!-- DET SPECIFIKKE LINK: Se herunder, at linket peger hele vejen ind på den præcise profiladresse -->
+            <a href="https://linkedin.com/in/heinze" class="btn-linkedin" target="_blank" rel="noopener me">linkedin.com/in/heinze</a>
+        </div>
+    </div>
+
+</body>
+</html>
