@@ -55,7 +55,7 @@
       "url": "https://heinze.co",
       "image": "https://heinze.co",
       "sameAs": [
-        "https://linkedin.com/in/heinze"
+        "https://linkedin.com"
       ]
     }
     </script>
@@ -81,29 +81,33 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Content container */
+        /* Content container - Nu 100% gennemsigtig og top-elegant */
         .card {
             text-align: center;
-            max-width: 450px;
-            padding: 20px;
+            max-width: 360px; 
+            width: 85%; 
+            padding: 35px 25px; 
+            background-color: transparent; /* RETTET: Fjernet det hvide skær for maksimal elegance */
+            border: 1px solid rgba(255, 255, 255, 0.12); /* Den helt tynde, elegante ramme */
+            border-radius: 16px; /* Bløde hjørner, der matcher billedet */
         }
 
         /* Profile image styling - Square with elegant rounded corners */
         .profile-img {
             width: 190px;
             height: 190px;
-            border-radius: 12px; /* Smooth, elegant rounded corners instead of a full circle */
+            border-radius: 12px; /* Smooth, elegant rounded corners */
             object-fit: cover;
             margin-bottom: 25px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Discreet shadow under the photo */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Diskret skygge under foto */
         }
 
         /* Name styling - Forced to ALL CAPS (Versaler) */
         h1 {
-            font-size: 1.7rem; 
-            font-weight: 500;  /* RETTET: Sat ned til normal vægt */
+            font-size: 1.6rem; 
+            font-weight: 500;  /* Medium vægt (500) for perfekt balance */
             text-transform: uppercase;
-            letter-spacing: 0.05em; /* Added slight spacing between capital letters for aesthetics */
+            letter-spacing: 0.05em; /* Afstand mellem bogstaver */
             margin-bottom: 30px;
         }
 
@@ -119,16 +123,17 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 14px 32px;
+            padding: 14px 28px; 
             border: 1px solid rgba(255, 255, 255, 0.8);
             color: #FFFFFF;
             text-decoration: none;
             border-radius: 4px;
-            font-size: 1.05rem; /* Marginally scaled to optimize Calibri text readability */
-            font-weight: 400;   /* Clean and legible regular weight */
+            font-size: 1.02rem; 
+            font-weight: 400;   
             transition: all 0.3s ease;
             letter-spacing: 0.03em;
-            white-space: nowrap; /* Ensures the long URL doesn't break into two lines */
+            white-space: nowrap; 
+            width: auto; 
         }
 
         /* Smooth shift to LinkedIn's official professional corporate blue on hover */
@@ -144,15 +149,15 @@
 <body>
 
     <div class="card">
-        <!-- Profile Picture (Must be placed in the same root folder as profil.jpg) -->
+        <!-- Profile Picture -->
         <img src="profil.jpg" alt="PETER BJØRN HEINZE" class="profile-img">
         
-        <!-- Name (Automatically forced to uppercase via CSS) -->
+        <!-- Name -->
         <h1>Peter Bjørn Heinze</h1>
         
         <!-- Action items -->
         <div class="links">
-            <!-- LINJE 125: Fuldstændig strømlinet og præcis som ønsket -->
+            <!-- LinkedIn knap centreret i den stramme ramme -->
             <a href="https://linkedin.com/in/heinze" class="btn-linkedin" target="_blank">linkedin.com/in/heinze</a>
         </div>
     </div>
