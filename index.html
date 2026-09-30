@@ -120,17 +120,17 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 14px 32px; 
+            padding: 14px 0; /* Højde bevares, men side-padding fjernes da bredden nu er låst */
             border: 1px solid rgba(255, 255, 255, 0.8);
             color: #FFFFFF;
             text-decoration: none;
             border-radius: 4px;
-            font-size: 1.05rem; 
+            font-size: 1.02rem; /* Justeret en mikroskopisk smule for at stå fejlfrit på 190px bredde */
             font-weight: 400;   
             transition: all 0.3s ease;
-            letter-spacing: 0.03em;
+            letter-spacing: 0.02em;
             white-space: nowrap; 
-            width: auto; /* Tilbage til den kompakte og centriske knapform */
+            width: 190px; /* RETTET: Låst til nøjagtig samme bredde som profilbilledet ovenfor */
         }
 
         /* Smooth shift to LinkedIn's official professional corporate blue on hover */
@@ -148,25 +148,21 @@
                 font-size: 1.35rem;
                 letter-spacing: 0.03em;
             }
-            .btn-linkedin {
-                font-size: 0.9rem;
-                padding: 12px 20px;
-            }
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <!-- Profile Picture -->
+        <!-- Profile Picture (190px bredt) -->
         <img src="profil.jpg" alt="PETER BJØRN HEINZE" class="profile-img">
         
-        <!-- Name - Holder alt sikkert på én linje via hårde mellemrum -->
+        <!-- Name -->
         <h1>Peter&nbsp;Bjørn&nbsp;Heinze</h1>
         
         <!-- Action items -->
         <div class="links">
-            <!-- LinkedIn knap i kompakt format -->
+            <!-- LinkedIn knap - Nu nøjagtig 190px bred for perfekt symmetri -->
             <a href="https://linkedin.com/in/heinze" class="btn-linkedin" target="_blank">linkedin.com/in/heinze</a>
         </div>
     </div>
