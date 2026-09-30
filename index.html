@@ -81,13 +81,13 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Content container - Nu 100% gennemsigtig og top-elegant */
+        /* Content container - 100% gennemsigtig og top-elegant */
         .card {
             text-align: center;
             max-width: 360px; 
-            width: 85%; 
-            padding: 35px 25px; 
-            background-color: transparent; /* RETTET: Fjernet det hvide skær for maksimal elegance */
+            width: 88%; 
+            padding: 35px 20px; /* Optimeret luft til mobilsider */
+            background-color: transparent; 
             border: 1px solid rgba(255, 255, 255, 0.12); /* Den helt tynde, elegante ramme */
             border-radius: 16px; /* Bløde hjørner, der matcher billedet */
         }
@@ -109,6 +109,7 @@
             text-transform: uppercase;
             letter-spacing: 0.05em; /* Afstand mellem bogstaver */
             margin-bottom: 30px;
+            white-space: nowrap; /* Forbyder absolut teksten i at knække i to linjer */
         }
 
         /* Link container */
@@ -144,6 +145,18 @@
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
         }
+
+        /* Specialjustering til meget små mobilskærme, så navnet ikke skubbes ud af rammen */
+        @media (max-width: 360px) {
+            h1 {
+                font-size: 1.35rem;
+                letter-spacing: 0.03em;
+            }
+            .btn-linkedin {
+                font-size: 0.9rem;
+                padding: 12px 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -152,8 +165,8 @@
         <!-- Profile Picture -->
         <img src="profil.jpg" alt="PETER BJØRN HEINZE" class="profile-img">
         
-        <!-- Name -->
-        <h1>Peter Bjørn Heinze</h1>
+        <!-- Name - Pakket ind i koder, der holder alt på én linje -->
+        <h1>Peter&nbsp;Bjørn&nbsp;Heinze</h1>
         
         <!-- Action items -->
         <div class="links">
