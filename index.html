@@ -19,11 +19,31 @@
       "@type": "Person",
       "@id": "https://heinze.co",
       "name": "Peter Bjørn Heinze",
+      "nationality": {
+        "@type": "Country",
+        "name": "Denmark"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "DK"
+      },
       "jobTitle": [
         "Chief Adviser",
         "Lieutenant Colonel"
       ],
       "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Ministry of Foreign Affairs of Denmark",
+          "sameAs": "https://wikidata.org"
+        },
+        {
+          "@type": "Organization",
+          "name": "Danish Defence",
+          "sameAs": "https://wikidata.org"
+        }
+      ],
+      "affiliation": [
         {
           "@type": "Organization",
           "name": "Ministry of Foreign Affairs of Denmark",
@@ -81,26 +101,26 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Content container - Optimeret til det millimeter-balancerede layout */
+        /* Content container */
         .card {
             text-align: center;
             max-width: 450px;
             padding: 20px;
         }
 
-        /* Profile image styling - Præcis 240px bred og høj */
+        /* Profile image styling - Præcis 225px bred og høj */
         .profile-img {
-            width: 240px;
-            height: 240px;
+            width: 225px;
+            height: 225px;
             border-radius: 14px; /* Flot afstemt afrunding til den nye skala */
             object-fit: cover;
             margin-bottom: 30px;
             box-shadow: 0 5px 22px rgba(0, 0, 0, 0.15); /* Elegant, mellemdyb skygge */
         }
 
-        /* Name styling - Skaleret til at matche de 240px perfekt */
+        /* Name styling - Skaleret til at matche de 225px perfekt */
         h1 {
-            font-size: 1.85rem; /* Finjusteret størrelse til 240px bredden */
+            font-size: 1.75rem; /* Finjusteret størrelse til 225px bredden */
             font-weight: 500;  
             text-transform: uppercase;
             letter-spacing: 0.05em; 
@@ -115,7 +135,7 @@
             align-items: center;
         }
 
-        /* Professional LinkedIn Button - Låst til nøjagtig 240px bredde */
+        /* Professional LinkedIn Button - Låst til nøjagtig 225px bredde */
         .btn-linkedin {
             display: inline-flex;
             align-items: center;
@@ -125,12 +145,12 @@
             color: #FFFFFF;
             text-decoration: none;
             border-radius: 4px;
-            font-size: 1.05rem; 
+            font-size: 1.02rem; 
             font-weight: 400;   
             transition: all 0.3s ease;
             letter-spacing: 0.03em;
             white-space: nowrap; 
-            width: 240px; /* RETTET: Præcis 240px bred for ultimativ lodret symmetri */
+            width: 225px; /* Låst til præcis 225px bredde for perfekt symmetri */
         }
 
         /* Smooth shift to LinkedIn's official professional corporate blue on hover */
@@ -145,16 +165,16 @@
         /* Mobil-justering så det ikke klemmer på de absolut mindste skærmstørrelser */
         @media (max-width: 360px) {
             .profile-img {
-                width: 200px;
-                height: 200px;
+                width: 190px;
+                height: 190px;
             }
             h1 {
-                font-size: 1.45rem;
+                font-size: 1.4rem;
                 letter-spacing: 0.03em;
             }
             .btn-linkedin {
-                width: 200px;
-                font-size: 0.95rem;
+                width: 190px;
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -162,7 +182,7 @@
 <body>
 
     <div class="card">
-        <!-- Profile Picture (Præcis 240px bredt) -->
+        <!-- Profile Picture (Præcis 225px bredt) -->
         <img src="profil.jpg" alt="PETER BJØRN HEINZE" class="profile-img">
         
         <!-- Name -->
@@ -170,7 +190,7 @@
         
         <!-- Action items -->
         <div class="links">
-            <!-- LinkedIn knap - Præcis 240px bred for fuldkommen arkitektonisk balance -->
+            <!-- LinkedIn knap - Præcis 225px bred for fuldkommen lodret symmetri -->
             <a href="https://linkedin.com/in/heinze" class="btn-linkedin" target="_blank">linkedin.com/in/heinze</a>
         </div>
     </div>
